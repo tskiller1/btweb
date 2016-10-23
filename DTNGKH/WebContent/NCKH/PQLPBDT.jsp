@@ -13,14 +13,13 @@
       border: 1px solid   #000000;
       border-radius: 12px;
        margin: 50px 0px 50px 5px;
-        min-height: 300px;
         font-size: medium;
       }
     .custom{
       border: 1px solid   #000000;
       border-radius: 12px;
        margin: 50px 0px 0px 0px;
-        min-height: 270px;
+        min-height: 250px;
         min-width: 160px;
         font-size: medium;
         background: #F0FFFF;
@@ -29,23 +28,21 @@
       .custom2{
       border: 1px solid   #000000;
       border-radius: 12px;
-        min-height: 320px;
-        min-width: 500px;
         background: #F0FFFF;
         margin: 20px 20px 20px 20px;
         font-size: medium;
       }
-                  .custom5{
+      .custom5{
       border: 1px solid   #000000;
       border-radius: 12px;
         margin: 0px 0px 50px 0px;
-        min-height: 50px;
-        min-width: 1050px;
+        min-height: 40px;
+        max-width: 1250px;
         background: #F0FFFF;
         font-size: medium;
         box-shadow: inset 0px 0px 14px #87CEFA;
-      }
-                  .custom4{
+        }
+      .custom4{
       border: 1px solid   #000000;
       border-radius: 12px;
         min-height: 40px;
@@ -53,28 +50,29 @@
         background: #F0FFFF;
         font-size: medium;
       }
-      .container{
-        border: 1px solid   #000000;
-         background: #F5FFFA;
-      }
+   .container-fluid{
+      border: 1px solid   #000000;
+      background: #F5FFFA;
+   }
   </style>
  
   </head>
   <body>
-      <div class="container"> 
+      <div class="container-fluid"> 
       <div class="crow">
-        <img src="baner.png" style="max-width: 1140px;border-radius: 12px;">
-         <div class="custom5">
-             <ol class="nav navbar-nav navbar-left">
-              <li><a href="PQLDSDK.jsp">Trang chủ</a></li>
+        <img src="baner.png" class="img-responsive" style="border-radius: 12px; min-height: 70px;" >
+          <div class="custom5">
+             <ul class="nav navbar-nav navbar-left nav-tabs">
+              <li><a href="#">Trang chủ</a></li>
               <li><a href="#">Giới thiệu</a></li>
               <li><a href="#">Liên Hệ</a></li>
-           </ol>
-            <ol class="nav navbar-nav navbar-right" style="margin-right: 5px;" style="margin: 10px 10px 10px 10px;">
-              <li><P href="#" style="margin-top: 15px;">Phòng quản lý</p></li>
+           </ul>
+           <ol class="nav navbar-nav navbar-right nav-tabs" style="margin-right: 5px;" style="margin: 10px 10px 10px 10px;">
+              <li><P href="#" style="margin-top: 15px; margin-left:20px;">Phòng quản lý</p></li>
               <li><a href="Dangnhap.jsp">Đăng xuất</a></li>
             </ol>
-        </div>
+      </div>
+      </div>
         <div class ="crow">
           <div class="col-md-2">
             <div class="custom">
@@ -104,6 +102,7 @@
                 <div class="col-md-3">
             </div>
             <div class=custom2>
+            <div class="table-responsive">
                     <table class="table table-bordered"  style="margin: 10px 10px 10px;max-width: 650px;">
                 <tr>
                    <th>Mã đề tài</th>
@@ -136,6 +135,7 @@
                   <th></th>
                 </tr>
                 </table>
+                </div>
               </div>
             </div>
           </div>

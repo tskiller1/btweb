@@ -20,7 +20,7 @@
       border: 1px solid   #000000;
       border-radius: 12px;
        margin: 50px 0px 0px 0px;
-        min-height: 270px;
+        min-height: 200px;
         min-width: 160px;
         font-size: medium;
         background: #F0FFFF;
@@ -30,21 +30,21 @@
       border: 1px solid   #000000;
       border-radius: 12px;
         min-height: 320px;
-        min-width: 500px;
+        max-width: 1000px;
         background: #F0FFFF;
         margin: 20px 20px 20px 20px;
         font-size: medium;
       }
-                  .custom5{
+      .custom5{
       border: 1px solid   #000000;
       border-radius: 12px;
         margin: 0px 0px 50px 0px;
-        min-height: 50px;
-        min-width: 1050px;
+        min-height: 40px;
+        max-width: 1050px;
         background: #F0FFFF;
         font-size: medium;
         box-shadow: inset 0px 0px 14px #87CEFA;
-      }
+        }
                   .custom4{
       border: 1px solid   #000000;
       border-radius: 12px;
@@ -63,18 +63,19 @@
   <body>
       <div class="container"> 
       <div class="crow">
-        <img src="baner.png" style="max-width: 1140px;border-radius: 12px;">
-         <div class="custom5">
-             <ol class="nav navbar-nav navbar-left">
-              <li><a href="ADQLTK.jsp">Trang chủ</a></li>
+      <img src="baner.png" class="img-responsive" style="border-radius: 12px; min-height: 70px;" >
+          <div class="custom5">
+             <ul class="nav navbar-nav navbar-left nav-tabs">
+              <li><a href="#">Trang chủ</a></li>
               <li><a href="#">Giới thiệu</a></li>
               <li><a href="#">Liên Hệ</a></li>
-           </ol>
-            <ol class="nav navbar-nav navbar-right" style="margin-right: 5px;">
-              <li><P href="#" style="margin-top: 15px;">Admin</p></li>
+           </ul>
+           <ol class="nav navbar-nav navbar-right nav-tabs" style="margin-right: 5px;" style="margin: 10px 10px 10px 10px;">
+              <li><P href="#" style="margin-top: 15px; margin-left:20px;">Admin</p></li>
               <li><a href="Dangnhap.jsp">Đăng xuất</a></li>
             </ol>
-        </div>
+      </div>
+     </div>
         <div class ="crow">
           <div class="col-md-2">
             <div class="custom">
@@ -96,9 +97,11 @@
                 <div class="col-md-3">
             </div>
             <div class=custom2>
-            <input type="text" name="nms" placeholder="mã số sinh viên(giảng viên)" style="margin-left: 200px;margin-top: 20px;">
+            <form align="center">
+            <input type="text" name="nms" align="center" placeholder="mã số sinh viên(giảng viên)" style="margin-top: 20px;">
             <input type="submit" value="Thêm">
-            <table class="table table-bordered" style="width: 20%;margin-top: 40px;margin-left: 250px; border: 1px solid black;">
+            </form>
+            <table class="table" align="center" style="width: 40%;margin-top: 40px; border: 1px solid black;text-align: center;">
                 <tr>
                   <th>Mã số</th>
                 </tr>
@@ -116,15 +119,18 @@
                 </tr>
 
                 </table>
-             <button type="button" class="btn btn-success " style="margin-left: 300px; margin-bottom: 10px; font-size: 10px 24px" data-toggle="modal" data-target="#md1">Tạo</button> 
+                <form align="center">
+             <button type="button" class="btn btn-success " style="margin-bottom: 10px; font-size: 10px 24px" data-toggle="modal" data-target="#md1">Tạo</button>
+             </form> 
              <div class="modal" id="md1">
                   <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h4 class="modal-title">Danh sách</h4>
                       </div>
-                      <div class="modal-body" >
-                          <table class="table table-bordered">
+                      <div class="modal-body">
+                      <div class="table-responsive">
+                          <table class="table table-bordered ">
                             <tr>
                               <th style="min-width: 100px;">Tài khoản</th>
                               <th style="min-width: 140px;">Họ và Tên</th>
@@ -170,6 +176,7 @@
                               <button class="button" data-dismiss="modal" >Thóat</button>
                               <button class="button" data-dismiss="modal" style="margin-left: 30px;">In</button>
                             </span>
+                            </div>
                       </div>
                     </div>
                   </div>

@@ -13,14 +13,13 @@
       border: 1px solid   #000000;
       border-radius: 12px;
        margin: 50px 0px 50px 5px;
-        min-height: 300px;
         font-size: medium;
       }
     .custom{
       border: 1px solid   #000000;
       border-radius: 12px;
        margin: 50px 0px 0px 0px;
-        min-height: 270px;
+        min-height: 250px;
         min-width: 160px;
         font-size: medium;
         background: #F0FFFF;
@@ -29,23 +28,21 @@
       .custom2{
       border: 1px solid   #000000;
       border-radius: 12px;
-        min-height: 320px;
-        min-width: 500px;
         background: #F0FFFF;
         margin: 20px 20px 20px 20px;
         font-size: medium;
       }
-                  .custom5{
+      .custom5{
       border: 1px solid   #000000;
       border-radius: 12px;
         margin: 0px 0px 50px 0px;
-        min-height: 50px;
-        min-width: 1050px;
+        min-height: 40px;
+        max-width: 1250px;
         background: #F0FFFF;
         font-size: medium;
         box-shadow: inset 0px 0px 14px #87CEFA;
-      }
-                  .custom4{
+        }
+      .custom4{
       border: 1px solid   #000000;
       border-radius: 12px;
         min-height: 40px;
@@ -53,28 +50,38 @@
         background: #F0FFFF;
         font-size: medium;
       }
-      .container{
-        border: 1px solid   #000000;
-         background: #F5FFFA;
-      }
+   .container-fluid{
+      border: 1px solid   #000000;
+      background: #F5FFFA;
+   }
+   textarea{
+width:90%;
+padding: 15px;
+margin-top: 10px;
+border:1px solid #7ac9b7;
+border-radius:5px;
+margin-bottom: 20px;
+resize:none;
+}
   </style>
  
   </head>
   <body>
-      <div class="container">
+      <div class="container-fluid">
       <div class="crow">
-        <img src="baner.png" style="max-width: 1140px;border-radius: 12px;">
+        <img src="baner.png" class="img-responsive" style="border-radius: 12px; min-height: 70px;" >
           <div class="custom5">
-             <ol class="nav navbar-nav navbar-left">
-              <li><a href="PQLDSDK.jsp">Trang chủ</a></li>
+             <ul class="nav navbar-nav navbar-left nav-tabs">
+              <li><a href="#">Trang chủ</a></li>
               <li><a href="#">Giới thiệu</a></li>
               <li><a href="#">Liên Hệ</a></li>
-           </ol>
-            <ol class="nav navbar-nav navbar-right" style="margin-right: 5px;" style="margin: 10px 10px 10px 10px;">
-              <li><P href="#" style="margin-top: 15px;">Phòng quản lý</p></li>
+           </ul>
+           <ol class="nav navbar-nav navbar-right nav-tabs" style="margin-right: 5px;" style="margin: 10px 10px 10px 10px;">
+              <li><P href="#" style="margin-top: 15px; margin-left:20px;">Phòng quản lý</p></li>
               <li><a href="Dangnhap.jsp">Đăng xuất</a></li>
             </ol>
-        </div>
+      </div>
+      </div>
         <div class ="crow">
           <div class="col-md-2">
             <div class="custom">
@@ -104,25 +111,19 @@
                 <div class="col-md-3">
             </div>
             <div class=custom2>
-               <form style="margin-left: 10px;">
+               <form style="margin-left: 10px;"  class="form-responsive" align="center">
               <div class="panel-body">
-                <li>Gửi đến:</li> 
-                <div class="radio" style="margin-left: 50px;"> 
-                    <input id="all" type="radio" name="gender" value="Admin" style="margin-left: 0px;">
-                    <label for="all" style="margin-left: px;">Tất cả</label>
-                    <input id="SV" type="radio" name="gender" value="Sv" style="margin-left: 30px;">
-                    <label for="SV" style="margin-left: 30px;">Sinh viên</label>
-                    <input id="gv" type="radio" name="gender" value="gv" style="margin-left: 30px;">
-                    <label for="gv" style="margin-left: 30px;">Giang viên</label>
-                    <input id="nds" type="radio" name="gender" value="Sv" style="margin-left: 30px;">
-                    <label for="nds" style="margin-left: 30px;">Nhập danh sách</label>
-                </div>
+                <p>Gửi đến:<p> 
+         	 <label class="radio-inline" style="margin-left: 30px"><input id="sv" type="radio" name="optradio" value="SV">Sinh viên</label>
+          	<label class="radio-inline" style="margin-left: 30px;"><input id="gv" type="radio" name="optradio" value="GV">Giảng viên</label>
+         	 <label class="radio-inline" style="margin-left: 30	px; margin-top: 0px;"><input id="ad" type="radio" name="optradio" value="AD">Tất cả</label>
+         	 <label class="radio-inline" style="margin-left: 30px; margin-top: 0px;"><input id="pql" type="radio" name="optradio" value="PQL">Nhập người nhận</label>
               </div>    
                   <div class="form-group">
-                    <label for="email">Thông báo</label>
-                    <textarea name="message" rows="10" cols="70" style="margin-left:30px"></textarea>
+                    <label for="email" style="margin-left:10px;">Thông báo</label>
+                    <textarea name="message" rows="10" cols="70" style="margin-left:0px"></textarea>
                   </div>
-                  <input type="submit" value="Gửi" style="margin-left: 300px">
+                  <input type="submit" value="Gửi" style="margin-left: 0px">
             </form>
               </div>
             </div>
